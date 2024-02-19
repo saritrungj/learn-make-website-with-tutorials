@@ -10,3 +10,32 @@
   align-items: center;
   justify-content: center;
 }
+
+.sign-in-container {
+  background-color: orangered;
+  border: none;
+  border-radius: 3%;
+  padding: 85px;
+}
+
+.sign-in-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 5px;
+  & a {
+    margin-top: -15px;
+  } & input {
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.sign-in-button {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 5px;
+  & p {
+    margin-top: 10px;
+  }
+}
