@@ -1,4 +1,5 @@
 function handleLoginPage() {
+
 const usernameElemment = document.querySelector('.js-input-username');
 const passwordElemment = document.querySelector('.js-input-password');
 
@@ -9,5 +10,18 @@ if (username === md5('admin') && password === md5('admin')) {
   alert(`Login Success!, You're Welcome.`);
   usernameElemment.value = '';
   passwordElemment.value = '';
+} else {
+  alert(`Login Failed!, Please try again.`);
+  usernameElemment.value = '';
+  passwordElemment.value = '';
 }
 }
+
+document.body.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter') {
+    handleLoginPage();
+  }
+});
+
+
+
