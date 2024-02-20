@@ -17,6 +17,7 @@
 
 .flex-container {
   height: 100vh;
+  background: #ffe7cb;
 }
 
 .sign-in-container {
@@ -46,13 +47,20 @@
     width: auto;
     height: 36px;
     padding-left: 10px;
+    transition: background-color 0.2s;
   }
 
+input:focus {
+  background-color: #ffe7cb;
+}
+
+
+
 .sign-in-footer {
-  margin-top: 17px;
   display: grid;
-  grid-template-columns: 200px;
+  grid-template-columns: 245px;
   justify-content: center;
+  margin-top: 45px;
 }
 
 .sign-in-button button{
@@ -71,6 +79,13 @@
 
 .sign-in-button button:active {
   opacity: 1;
+}
+
+.not-member-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 a {

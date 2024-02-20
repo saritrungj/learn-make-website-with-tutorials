@@ -16,8 +16,9 @@
 <body>
   <div class="flex-container">
     <div class="sign-in-container">
-      <div class="sign-in-form">
+      <div class="sign-in-form">    
         <p id="login-logo">Login</p>
+        <div class="js-validate-title"></div>
         <p>Username</p>
         <input class="js-input-username" type="text">
         <p>Password</p>
@@ -30,10 +31,14 @@
           <button class="js-sign-in-button" onclick="handleLoginPage()">Sign in</button>
         </div>
         <div class="not-member-section">
-          <p>
-            Not a member yet?
-            <span><a href="/">Sign up</a></span>
-          </p>
+          <div>
+            <p>
+              Not a member yet?
+            </p>
+          </div>
+          <div>
+            <a href="/">Sign up</a>
+          </div>
         </div>
       </div>
     </div>
