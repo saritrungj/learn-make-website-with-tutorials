@@ -6,6 +6,14 @@
   text-decoration: none;
 }
 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  } to {
+    transform: translateX(0);
+  }
+}
+
 .flex-container,
 .sign-in-footer,
 .sign-in-button,
@@ -30,6 +38,8 @@
   padding: 88px 44px;
   backdrop-filter: blur(10px);
   box-shadow: 0px 0px 16px 0px;
+  animation: slideInLeft 0.7s ease-in 0s 1 normal forwards;
+  transform: translateX(-150px);
 }
 
 #login-logo {
@@ -57,8 +67,6 @@ input:focus {
   background-color: #ffe7cb;
 }
 
-
-
 .sign-in-footer {
   display: grid;
   grid-template-columns: 245px;
@@ -73,13 +81,14 @@ input:focus {
   border-radius: 4px;
   margin-bottom: 15px;
   cursor: pointer;
-  transition: opacity 0.15s, background-color 0.3s;
+  transition: opacity 0.15s, background-color 0.3s, transform 0.3s ease 0s;
 }
 
 .sign-in-button button:hover {
   color: black;
   background-color: #ffb638;
-  opacity: 0.7;
+  opacity: 1;
+  transform: translate(-10px);
 }
 
 .sign-in-button button:active {
@@ -97,11 +106,12 @@ a {
   margin-top: -15px;
   color: #ffb638;
   cursor: pointer;
-  transition: color 0.15s, opacity 0.15s;
+  transition: color 0.15s, opacity 0.15s, transform 0.3s ease 0s;
 }
 
 a:hover {
   color: #ffb638;
-  opacity: 0.7;
+  opacity: 1;
+  transform: translateX(-10px);
 }
 
