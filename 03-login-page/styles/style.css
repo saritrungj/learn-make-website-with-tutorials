@@ -87,12 +87,9 @@ input:focus {
 .sign-in-button button:hover {
   color: black;
   background-color: #ffb638;
+  font-weight: bold;
   opacity: 1;
   transform: translate(-10px);
-}
-
-.sign-in-button button:active {
-  opacity: 1;
 }
 
 .not-member-section {
