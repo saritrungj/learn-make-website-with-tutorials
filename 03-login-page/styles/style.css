@@ -17,16 +17,19 @@
 
 .flex-container {
   height: 100vh;
-  background: #ffe7cb;
+  background-image: url("https://img.freepik.com/free-photo/view-spectacular-nature-landscape_23-2150763636.jpg");
+  background-size: cover;
+  filter: blur(0px);
 }
 
 .sign-in-container {
-  background-color: #eb8b14;
+  background-color: rgba(75, 75, 75, 0.3);
   border: none;
   border-radius: 33px;
   width: 460px;
   height: 520px;
   padding: 88px 44px;
+  backdrop-filter: blur(10px);
 }
 
 #login-logo {
@@ -70,10 +73,12 @@ input:focus {
   border-radius: 4px;
   margin-bottom: 15px;
   cursor: pointer;
-  transition: opacity 0.15s;
+  transition: opacity 0.15s, background-color 0.3s;
 }
 
 .sign-in-button button:hover {
+  color: black;
+  background-color: #ffb638;
   opacity: 0.7;
 }
 
@@ -90,13 +95,13 @@ input:focus {
 
 a {
   margin-top: -15px;
-  color: #0032d7;
+  color: #ffb638;
   cursor: pointer;
   transition: color 0.15s, opacity 0.15s;
 }
 
 a:hover {
-  color: #0032d7;
+  color: #ffb638;
   opacity: 0.7;
 }
 
