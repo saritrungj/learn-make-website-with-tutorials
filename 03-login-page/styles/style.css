@@ -19,7 +19,6 @@
   height: 100vh;
   background-image: url("https://img.freepik.com/free-photo/view-spectacular-nature-landscape_23-2150763636.jpg");
   background-size: cover;
-  filter: blur(0px);
 }
 
 .sign-in-container {
@@ -30,6 +29,7 @@
   height: 520px;
   padding: 88px 44px;
   backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 16px 0px;
 }
 
 #login-logo {
