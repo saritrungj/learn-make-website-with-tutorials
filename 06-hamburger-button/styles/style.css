@@ -54,7 +54,7 @@ body {
 }
 
 .toggle-button .bar {
-  height: 3px;
+  height: 4px;
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
