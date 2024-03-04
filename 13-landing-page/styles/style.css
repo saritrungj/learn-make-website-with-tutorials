@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* CSS Variables */
 :root {
   --primary-color: #3685fb;
   --primary-color-dark: #2f73d9;
