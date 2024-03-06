@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', 'san-serif';
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-container {
+  padding: 2rem;
+}
+
+.header-container {
+  background: url('https://images.unsplash.com/photo-1439405326854-014607f694d7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 420px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+nav .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+nav .nav-links li {
+  margin-right: .9rem;
+}
+
+nav .nav-links li a {
+  text-decoration: none;
+  font-size: .7rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  transition: opacity .15s;
+}
+
+nav .nav-links li a:hover {
+  opacity: 0.7;
+}
+
+.header-info {
+  margin-top: 6rem;
+  width: 300px
+}
+
+.header-title {
+  font-size: 3rem;
+}
+
+.header-subtitle {
+  margin-top: .7rem;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.button {
+  margin-top: .7rem;
+  border: none;
+  font-size: .7rem;
+  border-radius: 5px;
+  height: 36px;
+  width: 100px;
+  background-color: #FFF;
+  transition: background-color .3s, opacity .3s;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+.header-button button:active {
+  opacity: 0.8;
+}
+
+.travel-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 350px 1fr;
+}
+
+.grid-travel-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 300px;
+}
+
+.grid-travel-showcase .travel-item img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.travel-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.travel-subtitle {
+  width: 500px;
+  margin-top: .7rem;
+}
+
+.travel-container button {
+  color: #FFF;
+  background-color: rgb(0, 104, 156);
+  transition: background-color .3s, opacity .3s;
+}
+
+.travel-container button:hover {
+  background-color: rgb(49, 159, 214);
+}
+
+.travel-container button:active {
+ opacity: 0.8;
+}
+
+
