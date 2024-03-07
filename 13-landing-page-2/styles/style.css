@@ -5,21 +5,18 @@
   font-family: 'Arial', 'san-serif';
 }
 
-body {
-  max-width: 1200px;
+.container {
+  max-width: 1140px;
   margin: 0 auto;
 }
 
-.section-container {
-  padding: 2rem;
-}
-
-.header-container {
+.header-section {
   background: url('https://images.unsplash.com/photo-1439405326854-014607f694d7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-position: center;
   background-size: cover;
-  color: #fff;
-  height: 420px;
+  color: #fdc33b;
+  padding: 1rem 0;
+  height: 500px;
 }
 
 nav {
@@ -29,7 +26,7 @@ nav {
 }
 
 nav .logo {
-  font-size: .9rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -39,73 +36,78 @@ nav .nav-links {
 }
 
 nav .nav-links li {
-  margin-right: .9rem;
+  margin-right: 1rem;
 }
 
 nav .nav-links li a {
   text-decoration: none;
-  font-size: .7rem;
+  font-size: .9rem;
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
-  transition: opacity .15s;
+  transition: color .15s, font-size .3s;
 }
 
 nav .nav-links li a:hover {
-  opacity: 0.7;
+  font-size: 1.2rem;
+  color: #fdc33b;
 }
 
 .header-info {
-  margin-top: 6rem;
-  width: 300px
+  margin-top: 9rem;
+  margin-left: 1rem;
+  width: 400px
 }
 
 .header-title {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .header-subtitle {
-  margin-top: .7rem;
-  font-size: 0.7rem;
-  font-weight: lighter;
+  margin-top: 1rem;
+  font-size: .9rem;
+  color: #fff;
 }
 
 .button {
-  margin-top: .7rem;
+  margin-top: 1.5rem;
   border: none;
   font-size: .7rem;
   border-radius: 5px;
   height: 36px;
   width: 100px;
   background-color: #FFF;
-  transition: background-color .3s, opacity .3s;
+  transition: background-color .3s, transform .3s;
 }
 
 .button:hover {
   background-color: #e0e0e0;
+  transform: scale(1.1);
 }
 
 .header-button button:active {
   opacity: 0.8;
 }
 
+.travel-section {
+  background: #fdc33b;
+}
+
 .travel-container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  grid-template-columns: 350px 1fr;
+  justify-content: center;
+  color: #fff;
 }
 
-.grid-travel-showcase {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  width: 300px;
-}
-
-.grid-travel-showcase .travel-item img {
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+.travel-intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 700px;
+  margin-top: 2rem;
 }
 
 .travel-title {
@@ -114,22 +116,388 @@ nav .nav-links li a:hover {
 }
 
 .travel-subtitle {
-  width: 500px;
-  margin-top: .7rem;
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 0.5rem;
 }
 
 .travel-container button {
-  color: #FFF;
-  background-color: rgb(0, 104, 156);
-  transition: background-color .3s, opacity .3s;
+  color: black;
+  transition: background-color .3s, transform .3s;
+  margin-bottom: 1rem;
 }
 
 .travel-container button:hover {
-  background-color: rgb(49, 159, 214);
+  transform: scale(1.1);
 }
 
 .travel-container button:active {
  opacity: 0.8;
 }
 
+.grid-travel-showcase {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 80%;
+}
 
+.grid-travel-showcase .travel-item img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  transition: transform .3s;
+  border-radius: 5px;
+}
+
+.grid-travel-showcase .travel-item img:hover {
+  transform: scale(1.1);
+}
+
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-intro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 700px;
+  margin-top: 2rem;
+}
+
+.pricing-title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.pricing-subtitle {
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+.grid-pricing {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem
+}
+
+.pricing-box {
+  text-align: center;
+  background: #fdc33b;
+  color: #fff;
+}
+
+.pricing-box .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: rgb(255, 215, 159);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pricing-box .details {
+  padding: 2rem;
+}
+
+.pricing-box .details .cost {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.pricing-box .details p {
+  font-size: .9rem;
+  margin: 0.5rem 0;
+}
+
+.pricing-box .pricing-button .more-details-button {
+  margin-top: 2rem;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: transform .3s, opacity .3s;
+}
+
+.pricing-button .more-details-button:hover {
+  opacity: 0.9;
+  transform: scale(1.1)
+}
+
+.pricing-box .pricing-button a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-section {
+  background-color: #fdc33b;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 2rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+.footer-about {
+  width: 250px;
+}
+
+.footer-title {
+  font-size: 1rem;
+}
+
+.footer-subtitle {
+  font-size: 0.8rem;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  font-size: .8rem;
+  color: #fff;
+  transition: font-size .3s;
+}
+
+.footer-logo img{
+  width: 100px;
+  height: 100px;
+  transition: transform .3s;
+}
+
+.footer-logo img:hover{
+  transform: scale(1.1);
+}
+
+.copyright-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding: 3rem;
+  }
+
+  nav .logo {
+    font-size: 1rem;
+  }
+
+  nav .nav-links li a {
+    font-size: .6rem;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-subtitle {
+    font-size: .7rem;
+  }
+
+  .button {
+    width: 85px;
+    height: 28px;
+    font-size: 0.6rem;
+  }
+
+  .travel-intro {
+    margin-top: 0;
+  }
+
+  .travel-title {
+    font-size: 1.5rem;
+  }
+
+  .travel-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .grid-travel-showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .travel-container button {
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+
+  .pricing-container {
+    margin-top: -2rem;
+  }
+
+  .pricing-title {
+    font-size: 1.5rem;
+  }
+
+  .pricing-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .pricing-box .title {
+    font-size: 1rem;
+  }
+
+  .pricing-box .details .cost {
+    font-size: 1.5rem;
+  }
+
+  .pricing-box .details p {
+    font-size: .8rem;
+  }
+
+  .pricing-box .pricing-button .more-details-button {
+    font-size: .7rem;
+    width: 70%;
+  }
+
+  .footer-about .footer-title {
+    font-size: .9rem;
+  }
+
+  .footer-about .footer-subtitle {
+    font-size: .6rem;
+  }
+
+  .footer-links ul li a{
+    font-size: 0.6rem;
+  }
+
+  .footer-logo img {
+    width: 80px;
+    height: 80px;  
+  }
+
+  .copyright-text {
+    font-size: .6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem;
+  }
+
+  nav .logo {
+    font-size: 1rem;
+  }
+
+  nav .nav-links li a {
+    font-size: .6rem;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-subtitle {
+    font-size: .7rem;
+  }
+
+  .button {
+    width: 85px;
+    height: 28px;
+    font-size: 0.6rem;
+  }
+
+  .travel-intro {
+    margin-top: 0;
+  }
+
+  .travel-title {
+    font-size: 1.5rem;
+  }
+
+  .travel-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .grid-travel-showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-travel-showcase .travel-item img {
+    width: 100%;
+  }
+
+  .travel-container button {
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+
+  .pricing-container {
+    margin-top: -2rem;
+  }
+
+  .pricing-title {
+    font-size: 1.5rem;
+  }
+
+  .pricing-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .pricing-box .title {
+    font-size: 1rem;
+  }
+
+  .pricing-box .details .cost {
+    font-size: 1.5rem;
+  }
+
+  .pricing-box .details p {
+    font-size: .8rem;
+  }
+
+  .pricing-box .pricing-button .more-details-button {
+    font-size: .7rem;
+    width: 70%;
+  }
+
+  .footer-about .footer-title {
+    font-size: .9rem;
+  }
+
+  .footer-about .footer-subtitle {
+    font-size: .6rem;
+  }
+
+  .footer-links ul li a{
+    font-size: 0.6rem;
+  }
+
+  .footer-logo img {
+    width: 80px;
+    height: 80px;  
+  }
+
+  .copyright-text {
+    font-size: .6rem;
+  }
+}

@@ -88,6 +88,7 @@ nav a {
 
 .pricing {
   background-color: #3daeff;
+  
   color: #FFF;
   text-align: center;
   padding: 3rem 0;
@@ -126,7 +127,7 @@ nav a {
 }
 
 .price-blue {
-  color: 3daeff;
+  color: #3daeff;
   font-size: 4rem;
   font-weight: bold;
 }
