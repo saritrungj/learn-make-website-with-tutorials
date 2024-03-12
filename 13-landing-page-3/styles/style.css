@@ -7,10 +7,34 @@
     font-family: 'Poppins', 'Arial';
 }
 
+/* ----------------------------------------------
+        *   *   *   *   *   *   *   *   *   *
+        *       [ Table of Content ]        *
+        *   *   *   *   *   *   *   *   *   *
+
+            -> #01 Container
+            -> #02 Navbar 
+            -> #03 Featured Section
+            -> #04 Video Preview Section
+            -> #05 Best Deal Section
+            -> #06 Properties Section
+            -> #07 Contact Section
+            -> #08 Footer
+------------------------------------------------- */
+
+
+/* ----------------------------------------------
+                   #01 Container
+------------------------------------------------- */
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+/* ----------------------------------------------
+                   #02 Navbar
+------------------------------------------------- */
 
 nav {
     background-color: #fff;
@@ -177,6 +201,10 @@ header {
     text-transform: uppercase;
 }
 
+/* ----------------------------------------------
+                #03 Featured Section
+------------------------------------------------- */
+
 .featured {
     margin: 5rem 0;
 }
@@ -274,11 +302,16 @@ header {
     font-weight: 600;
 }
 
+/* ----------------------------------------------
+              #04 Video Preview Section
+------------------------------------------------- */
+
 .video {
     background-image: url('../images/banner-03.jpg');
     background-position: center;
     background-size: cover;
     height: 500px;
+    margin-bottom: 500px;
 }
 
 .video-container {
@@ -311,7 +344,6 @@ header {
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
-
 
 .video-preview a i {
     position: absolute;
@@ -360,5 +392,403 @@ span i {
 .task-item span:nth-child(2) {
     font-weight: 600;
     color: #000;
+}
+
+/* ----------------------------------------------
+               #05 Best Deal Section
+------------------------------------------------- */
+
+.best-deal {
+    background-color: #f0f0f0;
+}
+
+.best-deal-container {
+    padding-bottom: 5rem;
+}
+
+.best-deal-top {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.best-deal-title p {
+    margin-top: 5rem;
+    color: #ff4500;
+    font-weight: 700;
+}
+
+.best-deal-title h1 {
+    margin-top: .7rem;
+    font-size: 2rem;
+}
+
+.deal-item-button .deal-btn {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    border: none;
+    margin-right: 1rem;
+    padding: .6rem 1.2rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: transform .15s, background-color .3s;
+}
+
+.deal-btn:hover {
+    transform: scale(0.98);
+}
+
+.deal-btn:focus {
+    background-color: #ff4500;
+}
+
+.best-deal-bottom {
+    margin-top: 4rem;
+}
+
+.best-deal-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+}
+
+.detail-item .deal-spec {
+    background-color: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.detail-item .deal-spec span:first-child {
+    font-size: 0.8rem;
+}
+
+.detail-item .deal-spec span:last-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.detail-item .deal-spec ul {
+    list-style: none;
+}
+
+.detail-item .deal-spec ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-item .deal-spec ul li:last-child {
+    border: none;
+}
+
+.detail-item .deal-info,
+.detail-item .deal-info .deal-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-item .deal-info .deal-info-text p {
+    font-size: 0.9rem;
+}
+
+.schedule-button {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.schedule-btn {
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.schedule-button .schedule-btn {
+    background-color: #000;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 30px;
+}
+
+.schedule-button .schedule-btn span {
+    margin-left: 1.3rem;
+    transition: color .3s;
+}
+
+.schedule-button .schedule-btn span:hover {
+    color: #ff4500;
+}
+
+.schedule-button .schedule-btn i {
+    position: absolute;
+    top: -25%;
+    right: 88%;
+    background-color: #ff4500;
+    padding: .73rem;
+    border-radius: 50%;
+}
+
+/* ----------------------------------------------
+              #06 Properties Section
+------------------------------------------------- */
+
+.properties-container {
+    padding: 5rem 0;
+}
+
+.properties-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.properties-header p {
+    color: #ff4500;
+    font-weight: 700;
+}
+
+.properties-header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.properties-item-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+}
+
+.properties-item {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.properties-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-info span:first-child {
+    background-color: #fbd9cf;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 12px;
+    display: inline-block;
+}
+
+.detail-info span:last-child {
+    color: #ff4500;
+    font-weight: 700;
+}
+
+.detail-address p {
+    font-weight: 700;
+}
+
+.detail-spec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .7rem;
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #d2cfcf;
+}
+
+.detail-spec span {
+    font-weight: 600;
+}
+
+.detail-schedule-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-schedule-button .schedule-btn {
+    background-color: #000;
+    padding: .6rem 1.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    transition: background-color .3s;
+}
+
+.detail-schedule-button .schedule-btn:hover {
+    background-color: #ff4500;
+}
+
+/* ----------------------------------------------
+               #07 Contact Section
+------------------------------------------------- */
+
+.contact {
+    background-image: url('https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/contact-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 5rem;
+    height: 500px;
+    margin-bottom: 420px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content {
+    margin-top: 5rem;
+    padding: 3rem;
+}
+
+.contact-header {
+    margin-bottom: 3rem;
+}
+
+.contact-header p {
+    color: #ff4500;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.contact-header h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact-info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    padding-left: 5rem;
+}
+
+.infomation-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.infomation-box .location-form img {
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+.infomation-box .infomation-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infomation-contact .telephone img,
+.infomation-contact .mail img {
+    width: 30px;
+}
+
+.infomation-contact .telephone,
+.infomation-contact .mail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    padding: 1rem 3.5rem;
+}
+
+.infomation-contact .telephone span,
+.infomation-contact .mail span {
+    font-weight: normal;
+    font-size: 0.6rem;
+}
+
+.contact-info-box .contact-box {
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.contact-info-box .contact-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .7rem;
+}
+
+.contact-info-box .contact-box form p {
+    font-size: 0.8rem;
+}
+
+.contact-info-box .contact-box form input {
+    padding: .3rem;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+}
+
+.contact-info-box .contact-box form textarea {
+    width: 100%;
+    height: 135px;
+    padding: .3rem;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+}
+
+.contact-box .send-button .send-message-btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.7rem;
+    border: none;
+    border-radius: 30px;
+    padding: .3rem .7rem;
+    transition: background-color .3s;
+}
+
+.contact-box .send-button .send-message-btn:hover {
+    background-color: #ff4500;    
+}
+
+/* ----------------------------------------------
+               #08 Footer
+------------------------------------------------- */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+    text-align: center;
 }
 
