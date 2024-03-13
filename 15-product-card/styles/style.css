@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.product-card {
+  width: 450px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  width: 100%;
+  position: relative;
+}
+
+.product-img img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-img .product-limited {
+  position: absolute;
+  top: 2%;
+  right: 70%;
+  background-color: rgb(255, 78, 78);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: .3rem .5rem;
+  display: none;
+}
+
+.product-info {
+  margin: 1rem 0;
+}
+
+.product-info div {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.product-info .product-brand {
+  opacity: .7;
+}
+
+.product-info .product-price {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.product-info ul {
+  display: flex;
+  list-style: none;
+}
+
+.product-info ul li{
+  margin-right: 0.5rem;
+}
+
+.product-info .black-color,
+.product-info .grey-color,
+.product-info .brown-color {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.product-info .black-color {
+  background-color: rgb(22, 22, 22);
+}
+
+.product-info .grey-color {
+  background-color: rgb(205, 205, 205);
+}
+
+.product-info .brown-color {
+  background-color: rgb(126, 34, 11);
+}
+
