@@ -6,3 +6,20 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+- 
+## How to get start
+
+#1 Install Node.js in project 
+
+```bash
+  npm i
+  or
+  npm install
+```
+    
+#2 run the project
+
+```bash
+  npm run dev
+```
