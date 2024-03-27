@@ -12,10 +12,10 @@ const Contact = () => {
             </h1>
           </div>
           <div className="contact-form">
-            <label htmlFor="">
+            <div className="contact-button">
               <input type="text" placeholder="yourmail@gmail.com" />
               <button className="submit-button">Submit</button>
-            </label>
+            </div>
           </div>
         </div>
       </section>

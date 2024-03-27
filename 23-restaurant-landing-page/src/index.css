@@ -431,32 +431,30 @@ body {
   margin-top: 3rem;
 }
 
-.contact-form label {
+.contact-button {
   position: relative;
-  transform: scale(1.2);
 }
 
-.contact-form label input {
+.contact-button input {
   width: 450px;
   height: 60px;
   background-color: #fff;
   border: none;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
+  border-radius: 40px;
   font-size: .8rem;
   font-weight: 500;
   opacity: .7;
   text-indent: 1.5rem;
 }
 
-.contact-form label input:focus {
+.contact-button input:focus {
   outline: none;
 }
 
-.contact-form label .submit-button {
+.contact-button .submit-button {
   position: absolute;
   top: 15%;
-  left: 80%;
+  left: 75%;
   width: 100px;
   height: 40px;
   border: none;
@@ -464,12 +462,11 @@ body {
   background-color: var(--primary-color);
   color: #fff;
   font-weight: 600;
-  outline: 10px solid #fff;
   transition: background-color .15s;
   cursor: pointer;
 }
 
-.contact-form label .submit-button:hover {
+.contact-button .submit-button:hover {
   background-color: var(--active-primary-color);
 } 
 
@@ -588,3 +585,4 @@ body {
   text-align: center;
   padding: 1rem;
 }
+
