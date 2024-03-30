@@ -5,9 +5,9 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
-    <div className="">
-      <div className="max-w-[1200px] h-[80vh] mx-auto flex flex-col-reverse sm:flex-row justify-center items-center">
-        <div className="flex-col my-auto mx-auto">
+    <div id="home">
+      <div className="max-w-[1200px] h-[80vh] mx-auto flex flex-col-reverse sm:flex-row justify-center items-center gap-5">
+        <div className="flex-col my-auto mx-auto gap-6">
           <p className="md:text-5xl sm:text-4xl text-xl font-bold text-gray-300">
             Hi! I am John Doe.
           </p>
@@ -16,11 +16,12 @@ const Hero = () => {
               sequence={[
                 "Frontend Dev",
                 1000,
-                "Webdesigner",
+                "Web Designer",
                 1000,
                 "Consultant",
                 1000,
               ]}
+              repeat={Infinity}
             />
           </h1>
           <div className="flex justify-center items-center">
@@ -33,7 +34,7 @@ const Hero = () => {
             <AiFillGithub />
             <AiFillInstagram />
           </div>
-          <div className="relative inline-flex group my-3">
+          <div className="relative inline-flex group my-4">
             <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
             </div>
             <a href="/" title="Download CV" role="button"
