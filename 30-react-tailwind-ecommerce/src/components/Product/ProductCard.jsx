@@ -21,7 +21,7 @@ const ProductCard = ({ data }) => {
                   alt="product-image"
                 />
                 {/* hover button */}
-                <div className="hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full h-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200">
+                <div className="hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full h-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200 cursor-pointer">
                   <Button
                     text="Add to cart"
                     bgColor="bg-primary"
