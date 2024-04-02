@@ -8,19 +8,24 @@ const ProductCard = ({ data }) => {
         {/* Card section */}
         {
           data.map((data) => (
-            <div key={data.id} className="group">
+            <div
+              // animation with AOS
+              data-aos="fade-up"
+              data-aos-delay={data.aosDelay}
+              key={data.id}
+              className="group">
               <div className="relative">
-                <img 
-                className="h-[180px] w-[260px] object-cover rounded-md"
-                src={data.img} 
-                alt="product-image" 
+                <img
+                  className="h-[180px] w-[260px] object-cover rounded-md"
+                  src={data.img}
+                  alt="product-image"
                 />
                 {/* hover button */}
                 <div className="hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full h-full text-center group-hover:backdrop-blur-sm justify-center items-center duration-200">
-                  <Button 
-                  text="Add to cart"
-                  bgColor="bg-primary"
-                  textColor="text-white"
+                  <Button
+                    text="Add to cart"
+                    bgColor="bg-primary"
+                    textColor="text-white"
                   />
                 </div>
               </div>

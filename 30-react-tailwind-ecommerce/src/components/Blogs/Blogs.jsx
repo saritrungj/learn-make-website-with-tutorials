@@ -9,19 +9,22 @@ const BlogData = [
     title: "How to choose perfect smartwatch",
     subtitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus molestiae quis consectetur expedita cumque? Atque fuga laborum nostrum animi alias expedita magni quasi. Sit, molestias!",
     published: "Jan 20, 2024 by Dilshad",
-    image: Img1
+    image: Img1,
+    aosDelay: "0",
   },
   {
     title: "How to choose perfect gadget",
     subtitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus molestiae quis consectetur expedita cumque? Atque fuga laborum nostrum animi alias expedita magni quasi. Sit, molestias!",
     published: "Jan 20, 2024 by Satya",
-    image: Img2
+    image: Img2,
+    aosDelay: "200",
   },
   {
     title: "How to choose perfect VR headset",
     subtitle: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus molestiae quis consectetur expedita cumque? Atque fuga laborum nostrum animi alias expedita magni quasi. Sit, molestias!",
     published: "Jan 20, 2024 by Sabir",
-    image: Img3
+    image: Img3,
+    aosDelay: "400",
   },
 ]
 
@@ -39,13 +42,18 @@ const Blogs = () => {
           {/* Blog Card */}
           {
             BlogData.map((data, index) => (
-              <div key={index} className="bg-white dark:bg-gray-900 dark:text-white">
+              <div
+                // animation with AOS
+                data-aos="fade-up"
+                data-aos-delay={data.aosDelay}
+                key={index}
+                className="bg-white dark:bg-gray-900 dark:text-white">
                 {/* Image section */}
                 <div className="overflow-hidden rounded-2xl mb-2">
-                  <img 
-                  className="w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-500"
-                  src={data.image} 
-                  alt="news-image" 
+                  <img
+                    className="w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-500"
+                    src={data.image}
+                    alt="news-image"
                   />
                 </div>
                 {/* Content section */}
